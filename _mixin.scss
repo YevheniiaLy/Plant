@@ -1,0 +1,26 @@
+@mixin contactBlock() {
+  img {
+    margin-right: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+  color: #ffffff;
+}
+@mixin fontPoppins400Normal14px() {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+@mixin fontNunito700Normal16px() {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}

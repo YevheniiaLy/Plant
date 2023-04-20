@@ -1,0 +1,203 @@
+header {
+  width: 100vw;
+}
+.header-contacts {
+  background-color: $darkGreen;
+  width: 100%;
+  height: 59px;
+}
+
+.header-main {
+  height: 70px;
+}
+
+.header-cont-wrap {
+  height: 100%;
+  max-width: 1410px;
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.header-main-wrap {
+  height: 100%;
+  max-width: 1410px;
+  display: flex;
+  align-items: center;
+  @include fontNunito700Normal16px();
+  color: $darkGrey;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.hcontact-info {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.header-main {
+  width: 100%;
+  @include fontPoppins400Normal14px();
+}
+.hc-mail {
+  @include contactBlock();
+}
+.hc-tel {
+  @include contactBlock();
+  margin-left: 30px;
+}
+.hc-loc {
+  @include contactBlock();
+  margin-left: 30px;
+}
+
+.hc-lang {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.header-nav {
+  width: 627px;
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  li {
+    color: $darkGrey;
+    padding-right: 20px;
+    background-image: url(./img/vector-downblack-icon.svg);
+    background-repeat: no-repeat;
+    background-position: top 5px right 1px;
+    &:hover {
+      color: $mainGreen;
+    }
+    cursor: pointer;
+  }
+}
+.logo-wrap {
+  margin-left: 10px;
+  margin-right: 370px;
+}
+
+.call-btn {
+  margin-left: 100px;
+  margin-right: 5px;
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: $mainGreen;
+  background-image: url(./img/phone-btn.svg);
+  background-repeat: no-repeat;
+  background-position: top 8px left 17px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 20px;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    opacity: 0.75;
+  }
+  a {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+/* mobile version */
+.mob-header {
+  display: none;
+}
+.mob-header-contacts {
+  background-color: $darkGreen;
+  width: 100%;
+  height: 55px;
+}
+.mob-header-main {
+  height: 70px;
+}
+.mob-header-cont-wrap {
+  height: 100%;
+  max-width: 1200px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.mob-header-main-wrap {
+  height: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.mob-hc-mail {
+  margin-left: 20px;
+}
+.mob-hc-tel {
+  margin-left: 20px;
+}
+.mob-hc-loc {
+  margin-left: 20px;
+}
+.mob-hc-lang {
+  margin-right: 20px;
+  color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+.mob-call-btn {
+  background-color: $mainGreen;
+  width: 40px;
+  height: 34px;
+
+  border-radius: 10px;
+  background-image: url(./img/phone-call-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: top 6px left 9px;
+  cursor: pointer;
+  position: relative;
+  a {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.mob-btn-menu {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.sandvich-btn {
+  height: 20px;
+}
+@media (max-width: 1250px) {
+  .header {
+    display: none;
+  }
+  .mob-header {
+    display: block;
+  }
+}
