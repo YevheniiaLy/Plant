@@ -262,6 +262,13 @@ header {
   margin: auto;
 }
 
+.wrapper-large-sl {
+  font-family: "Nunito";
+  font-style: normal;
+  width: 100vw;
+  margin: auto;
+}
+
 .main-inform-block {
   background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
   height: 719px;
@@ -537,7 +544,7 @@ header {
   max-width: 1410px;
   margin: auto;
   text-align: center;
-  padding: 100px 10px 0px 10px;
+  padding: 100px 0px 0px 10px;
 }
 
 .title-h3 {
@@ -968,6 +975,580 @@ header {
 @media (max-width: 570px) {
   .choose-wrapper {
     height: 815px;
+  }
+}
+/* working process box */
+.proc-title {
+  margin-top: 96px;
+}
+
+.proc-inform {
+  max-width: 1136px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #676767;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.proc-card-box {
+  margin-top: 50px;
+}
+
+.green-bg {
+  background: #00730c;
+}
+
+.proc-card {
+  padding: 50px 29px 70px;
+  width: calc(25% - 80px);
+  height: 408px;
+  box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-image: url(./img/card-icon/plant_group_bg.svg);
+  background-repeat: no-repeat;
+  background-position: top 113px right 29px;
+}
+
+.pr-card-num-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pr-card-img {
+  width: 70px;
+  height: 70px;
+}
+
+.pr-card-num {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 78px;
+  color: #ffffff;
+  width: 47px;
+  height: 80px;
+}
+
+.pr-card-title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.pr-card-iform {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.color-light-grey {
+  color: #e3e3e3;
+}
+
+.color-dark-grey {
+  color: #212529;
+}
+
+.color-black {
+  color: black;
+}
+
+.proc-card-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pr-ib-inform {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 45px;
+  color: #ffffff;
+  width: 448px;
+  height: 90px;
+  text-align: left;
+}
+
+.pr-img-box-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+  height: 247px;
+  background-image: url(./img/hand-holding-small-tree-plantingb.jpg);
+  background-position-x: -10px;
+}
+
+.pr-img-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 703px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.pr-btn-call {
+  width: 170px;
+  height: 50px;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  color: #00730c;
+  line-height: 50px;
+  padding-left: 35px;
+  background-image: url(./img/phone-btn\(green\).svg);
+  background-repeat: no-repeat;
+  background-position: top 11px left 27px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.pr-btn-call:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+  .proc-card {
+    width: 50%;
+  }
+  .proc-title {
+    font-size: 28px;
+  }
+  .proc-inform {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .pr-card-num {
+    font-size: 45px;
+  }
+  .pr-card-img {
+    width: 50px;
+    height: 50px;
+  }
+  .pr-card-title {
+    font-size: 16px;
+  }
+  .pr-card-iform {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .pr-card-img img {
+    width: 50px;
+    height: 50px;
+  }
+  .pr-img-box {
+    padding: 20px;
+  }
+  .pr-ib-inform {
+    text-shadow: rgb(104, 104, 104) 1px 1px;
+  }
+}
+@media (max-width: 750px) {
+  .pr-img-box {
+    justify-content: center;
+    margin-right: 0;
+    flex-direction: column;
+    width: 425px;
+  }
+  .pr-img-box-wrap {
+    justify-content: center;
+  }
+  .pr-ib-inform {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .pr-btn-call {
+    width: 136px;
+    padding-left: 43px;
+    background-position: top 11px left 22px;
+  }
+}
+@media (max-width: 570px) {
+  .proc-card {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .pr-img-box-wrap {
+    background-image: url(./img/card-icon/hand-holding-small-tree-planting\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/* trained box */
+.trained-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.trained-title {
+  text-align: left;
+  flex: 100%;
+}
+
+.trained-inform {
+  width: 956px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #212529;
+  text-align: left;
+}
+
+.trained-btn {
+  width: 190px;
+  height: 50px;
+  background-color: #00730c;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  border-radius: 5px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.trained-btn:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.trained-card {
+  position: relative;
+  width: 330px;
+  height: 408px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.trained-card-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 100%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.trained-card-bg1 {
+  background-image: url(./img/trained_bg1.svg);
+}
+
+.trained-card-bg2 {
+  background-image: url(./img/trained_bg2.svg);
+}
+
+.trained-card-bg3 {
+  background-image: url(./img/trained_bg3.svg);
+}
+
+.trained-card-bg4 {
+  background-image: url(./img/trained_bg4.svg);
+}
+
+.trained-card-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(6.68deg, #00730c 4.95%, rgba(251, 246, 238, 0) 264.79%);
+  border-radius: 10px;
+}
+
+.trained-card-close {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: 90px;
+  background: linear-gradient(6.68deg, #00730c 4.95%, rgba(251, 246, 238, 0) 264.79%);
+  border-radius: 10px;
+}
+
+.trained-card-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.trained-card-prof {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.social-box {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.soc-google {
+  background-image: url(./img/card-icon/google_icon.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.soc-fb {
+  background-image: url(./img/card-icon/facebook_icon.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.soc-tw {
+  background-image: url(./img/card-icon/twitter_icon.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.soc-pint {
+  background-image: url(./img/card-icon/pinterest_icon.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.soc-in {
+  background-image: url(./img/card-icon/linkedin_icon.svg);
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1390px) {
+  .trained-card-box {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1250px) {
+  .trained-wrap {
+    justify-content: center;
+  }
+  .trained-title {
+    text-align: center;
+  }
+  .trained-inform {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .trained-title {
+    font-size: 28px;
+  }
+  .trained-inform {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .trained-btn {
+    width: 167px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+/* reviews slider */
+.reviews-wrap {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+}
+
+.reviews-card {
+  width: 690px;
+  height: 340px;
+  display: flex;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  background-color: #ffffff;
+  background-image: url(./img/card-icon/rectangle_bg.svg);
+  background-position: top 127px left 25px;
+  background-repeat: no-repeat;
+  padding: 32px 32px 33px 25px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.review-text {
+  width: 956px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #676767;
+  margin-top: 30px;
+}
+
+.review-title {
+  text-align: left;
+}
+
+.rv-card-info {
+  margin-left: 31px;
+}
+
+.rv-info-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #212529;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.rv-personal-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #212529;
+}
+
+.rv-personal-prof {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #212529;
+}
+
+.star {
+  width: 25px;
+  height: 25px;
+  background-image: url(./img/card-icon/star_icon.svg);
+}
+
+.rv-personal-rating {
+  display: flex;
+  align-items: center;
+  width: 130px;
+  justify-content: space-around;
+}
+
+.rv-personal {
+  text-align: left;
+}
+
+.rv-info-personal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+}
+
+.bg-light-blue {
+  position: relative;
+  background-color: #e4f3e8;
+  height: 400px;
+  margin-top: 100px;
+  margin-bottom: 360px;
+}
+
+/* slider */
+.slick-prev {
+  top: -35px;
+  left: 1082px;
+  width: 50px;
+  height: 50px;
+}
+
+.slick-next {
+  top: -35px;
+  left: 1158px;
+  width: 50px;
+  height: 50px;
+}
+
+.slick-next:before {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/card-icon/slider_right.svg);
+  background-position-y: -1px;
+  background-position-x: -1px;
+}
+
+.slick-next:hover:before {
+  background-image: url(./img/card-icon/slider_hover_right.svg);
+}
+
+.slick-prev:before {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/card-icon/slider_left.svg);
+}
+
+.slick-prev:hover:before {
+  background-image: url(./img/card-icon/slider_hover_left.svg);
+}
+
+@media (max-width: 1250px) {
+  .review-title {
+    text-align: center;
+  }
+  .review-text {
+    width: 80%;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+  }
+  .slick-prev {
+    left: 41%;
+  }
+  .slick-next {
+    left: 50%;
+  }
+}
+@media (max-width: 750px) {
+  .reviews-card {
+    width: 70%;
+    height: 550px;
+    display: block;
+    background-image: none;
+  }
+  .slick-prev {
+    left: 39%;
+  }
+  .slick-next {
+    left: 52%;
+  }
+  .rv-card-img img {
+    width: 135px;
+  }
+  .rv-info-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .bg-light-blue {
+    height: 600px;
   }
 }
 * {
